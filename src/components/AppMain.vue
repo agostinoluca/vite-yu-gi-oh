@@ -28,10 +28,18 @@ export default {
 <template>
     <main>
         <div class="container">
-            <div class="row" v-for="character in characters">
-                <div class="col-12">
-                    <img :src="character.card_images[0].image_url" alt="">
-                    {{ character.name }}
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2" v-for="character in characters"
+                    :key="character.id + '_character'">
+                    <div class="card text-center m-1 p-2">
+                        <img :src="character.card_images[0].image_url" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{ character.name }}
+                            </h5>
+                            <h6 class="card-subtitle mb-2">{{ character.type }}</h6>
+                            <p>{{ character.archetype }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,4 +47,17 @@ export default {
 </template>
 
 
-<style scoped></style>
+<style scoped>
+.card {
+    background-color: rgba(0, 0, 0, 0.418);
+
+    & .card-body {
+        height: 10rem;
+        color: white;
+    }
+
+    & img {
+        border-radius: 0.5rem;
+    }
+}
+</style>
