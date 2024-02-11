@@ -6,7 +6,6 @@ export default {
 
 <template>
     <div class="loader">
-        <h1>loader</h1>
     </div>
 </template>
 
