@@ -4,7 +4,7 @@ export default {
     props: {
         characters: {
             type: Array,
-            required: true
+            required: false
         }
     }
 
@@ -12,7 +12,11 @@ export default {
 </script>
         
 <template>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-2" v-for="character in characters" :key="character.id + '_character'">
+    <div v-if="!characters">
+        <p>Error loading API. The service may be temporarily unavailable.</p>
+    </div>
+    <div v-else class="col-12 col-sm-6 col-md-4 col-lg-2" v-for="character in characters"
+        :key="character.id + '_character'">
         <div class="card text-center mb-3">
             <img :src="character.card_images[0].image_url" :alt="character.name + ' image'">
             <div class="card-body d-flex flex-column justify-content-between">
