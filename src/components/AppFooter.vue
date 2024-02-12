@@ -17,7 +17,7 @@ export default {
 footer {
     position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.836);
     height: 3rem;
     margin-top: 1rem;

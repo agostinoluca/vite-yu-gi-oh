@@ -57,7 +57,7 @@ export default {
     <main>
         <div class="container">
             <div class="row" v-if="!loading">
-                <div class="col-12 m-1 mb-3 d-flex justify-content-between align-items-center">
+                <div class="col-12 mb-3 d-flex justify-content-between align-items-center">
                     <select class="form-select" name="filter" id="filter" style="width: auto;" v-model="selected_option">
                         <option value="All">
                             All Cards Archetype
