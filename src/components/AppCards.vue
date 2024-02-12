@@ -12,7 +12,7 @@ export default {
 </script>
         
 <template>
-    <div v-if="!characters">
+    <div class="error_api" v-if="!characters">
         <p>Error loading API. The service may be temporarily unavailable.</p>
     </div>
     <div v-else class="col-12 col-sm-6 col-md-4 col-lg-2" v-for="character in characters"
@@ -51,5 +51,18 @@ export default {
         color: rgb(192, 192, 192);
         font-weight: 400;
     }
+}
+
+.error_api {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: red;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 </style>

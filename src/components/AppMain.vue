@@ -73,7 +73,7 @@ export default {
                         {{ getResults }}
                     </div>
                 </div>
-                <AppCards :charaters="filteredCharacters"></AppCards>
+                <AppCards :characters="filteredCharacters"></AppCards>
             </div>
             <AppLoader v-else></AppLoader>
         </div>
