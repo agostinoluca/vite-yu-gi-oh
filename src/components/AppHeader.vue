@@ -16,10 +16,12 @@ export default {
 
 <style scoped>
 header {
+    width: 100%;
     background-color: white;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
     box-shadow: 0 0 2rem black;
+    position: fixed;
+    z-index: 9999;
 
     & span {
         font-size: 2rem;

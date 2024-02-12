@@ -48,7 +48,7 @@ export default {
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2" v-for="character in filteredCharacters"
                     :key="character.id + '_character'">
-                    <div class="card text-center m-1 p-2">
+                    <div class="card text-center mb-3">
                         <img :src="character.card_images[0].image_url" :alt="character.name + ' image'">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <h5 class="card-title"> {{ character.name }}
@@ -64,8 +64,13 @@ export default {
 
 
 <style scoped>
+main {
+    padding-top: 6rem;
+}
+
 .card {
     background-color: rgba(0, 0, 0, 0.418);
+    box-shadow: 0 0 0.25rem black;
 
     & .card-body {
         height: 10rem;
