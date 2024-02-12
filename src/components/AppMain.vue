@@ -32,6 +32,7 @@ export default {
                             // console.log(character.archetype);
                         }
                     });
+                    this.select_options.sort();
                 })
                 .catch((error) => {
                     console.error(error);
