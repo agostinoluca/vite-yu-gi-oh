@@ -1,5 +1,5 @@
 <script>
-import axios from 'Axios'
+import axios from 'axios'
 import AppLoader from './AppLoader.vue'
 import AppCards from './AppCards.vue'
 export default {
