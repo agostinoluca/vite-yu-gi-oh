@@ -2,11 +2,13 @@
 import axios from 'axios'
 import AppLoader from './AppLoader.vue'
 import AppCards from './AppCards.vue'
+// import TestButton from './TestButton.vue'
 export default {
     name: 'AppMain',
     components: {
         AppLoader,
-        AppCards
+        AppCards,
+        // TestButton
     },
     data() {
         return {
@@ -37,7 +39,10 @@ export default {
                 .catch((error) => {
                     console.error(error);
                 })
-        }
+        },
+        // funzioneInventata() {
+        //     console.log('funziono');
+        // }
     },
     created() {
         // setTimeout(() => {
@@ -59,6 +64,7 @@ export default {
 <template>
     <main>
         <div class="container">
+            <!-- <TestButton @bottone="funzioneInventata"></TestButton> -->
             <div class="row" v-if="!loading">
                 <div class="col-12 mb-3 d-flex justify-content-between align-items-center">
                     <select class="form-select" name="filter" id="filter" style="width: auto;" v-model="selected_option">
@@ -77,6 +83,7 @@ export default {
             </div>
             <AppLoader v-else></AppLoader>
         </div>
+
     </main>
 </template>
 
