@@ -74,7 +74,7 @@ export default {
                             {{ option }}
                         </option>
                     </select>
-                    <TestButton @bottone="funzioneInventata"></TestButton>
+                    <!-- <TestButton @bottone="funzioneInventata"></TestButton> -->
                     <div class="results">
                         {{ getResults }}
                     </div>
@@ -95,9 +95,9 @@ main {
 
 .results {
     color: white;
-    background-color: rgba(0, 128, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.418);
     padding: 0.5rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0.15rem rgba(255, 255, 255, 0.356);
+    box-shadow: 0 0 0.25rem black;
 }
 </style>

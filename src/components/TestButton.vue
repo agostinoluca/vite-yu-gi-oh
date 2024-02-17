@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div>
-        <button class="btn btn-light" @click='store.increment'>You clicked me {{ store.count }} times</button>
+        <!-- <button class="btn btn-light" @click='store.increment'>You clicked me {{ store.count }} times</button> -->
         <!-- <button @click="$emit('bottone')">{{ store.count }}</button> -->
     </div>
 </template>
